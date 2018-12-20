@@ -12,6 +12,8 @@ polkit.addRule(function(action, subject) {
     "org.freedesktop.udisks2.encrypted-unlock": YES,
     "org.freedesktop.udisks2.eject-media": YES,
     "org.freedesktop.udisks2.power-off-drive": YES,
+    // Dolphin specific
+    "org.freedesktop.udisks2.filesystem-mount-system": YES,
     // required for udisks2 if using udiskie from another seat (e.g. systemd):
     "org.freedesktop.udisks2.filesystem-mount-other-seat": YES,
     "org.freedesktop.udisks2.filesystem-unmount-others": YES,
