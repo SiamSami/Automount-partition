@@ -33,22 +33,8 @@ int main(int argc, char const *argv[])
 	system("sudo groupadd storage");
 	system("sudo groupadd power");
 	system("sudo groupadd users");
-	ifstream rulesSourceF("50-udiskie.rules");
-	ofstream rulesF("/etc/polkit-1/rules.d/50-udiskie.rules");
-	while(!rulesSourceF.eof()){
-		rulesSourceF >> temp;
-		rulesF << temp;
-	}
-	rulesSourceF.close();
-	rulesF.close();
-	ifstream rulesSourceS("10-rules.rules");
-	ofstream rulesS("/etc/polkit-1/rules.d/10-udiskie.rules");
-	while(!rulesSourceS.eof()){
-		rulesSourceS >> temp;
-		rulesS << temp;
-	}
-	rulesSourceS.close();
-	rulesS.close();
+	system("sudo cp 50-udiskie.rules /etc/polkit-1/rules.d/");
+	system("sudo cp 10-rules.rules /etc/polkit-1/rules.d/");
 	system("sudo chmod 644 /etc/polkit-1/rules.d/50-udiskie.rules");
 	system("sudo chmod 644 /etc/polkit-1/rules.d/10-rules.rules");
 	return 0;
