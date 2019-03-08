@@ -1,5 +1,5 @@
 # Automount-partition
-This is a script for automatically mounting partitions on startup in any Linux distribution.
+This is a script for automatically mounting partitions on startup in most Linux distributions.
 
 ### How to run
 1. Download this script as a zip file and extract it into a directory.
