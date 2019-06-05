@@ -1,5 +1,5 @@
 # Automount-partition
-This is a script for automatically mounting partitions on startup in most Linux distributions.
+This is a script to mount partitions without passwords. This is very useful for Archlinux and Debian.
 
 ### How to run
 1. Download this script as a zip file and extract it into a directory.
