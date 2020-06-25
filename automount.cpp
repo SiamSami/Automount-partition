@@ -36,5 +36,6 @@ int main(int argc, char const *argv[])
 	system("sudo cp 10-rules.rules /etc/polkit-1/rules.d/");
 	system("sudo chmod 644 /etc/polkit-1/rules.d/50-udiskie.rules");
 	system("sudo chmod 644 /etc/polkit-1/rules.d/10-rules.rules");
+	system("sudo systemctl enable udisks2");
 	return 0;
 }
